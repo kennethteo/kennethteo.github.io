@@ -5,11 +5,15 @@
 <body>
   <div class="wrapper">
 
-    <div class="header-single">
-
+    <div class="header-single-col">
+     {%- include header.html -%}
     </div>
-    {%- include header.html -%}
-    <section class="main-single">
+    
+    <div class="top-menu-wrapper">
+    {%- include nav_menu.html -%}
+    </div>
+    
+    <section class="main-single-col">
 
       {{ content }}
 
