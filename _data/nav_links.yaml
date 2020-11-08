@@ -1,0 +1,12 @@
+nav_list_title: Main nav links
+links:
+- title: Home
+  url: /
+- title: Thoughts
+  url: /blog
+- title: Tech
+  url: /tech
+- title: About
+  url: /about
+- title: Hello
+  url: /hello

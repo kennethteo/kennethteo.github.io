@@ -1,7 +1,12 @@
+<!-- <h2>{{ site.data.nav_links.nav_list_title }}</h2> -->
 <nav>
-<a href="/">Home</a>
-<a href="/blog/">Thoughts</a>
-<a href="/tech/">Tech</a>
-<a href="/about/">About</a>
-<a href="/hello/">Hello</a>
+   <ul>
+   {% for item in site.data.nav_links.links %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
+   </ul>
 </nav>
+
+{% if page.layout == 'home' %}
+<p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+{% endif %}
