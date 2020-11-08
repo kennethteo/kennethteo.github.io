@@ -1,10 +1,12 @@
-body { background-color: #fff; padding: 50px; font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #727272; font-weight: 400; }
+body { background-color: #fff; padding: 50px 20px; font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #727272; font-weight: 400; }
 
-header { width: 100%; -webkit-font-smoothing: subpixel-antialiased; }
+.wrapper { width: 860px; margin: 0 auto; }
+
+header { width: 100%; text-align: center; -webkit-font-smoothing: subpixel-antialiased; }
 
 img { max-width: 100%; }
 
-section { width: 50%; float: left; padding-bottom: 50px; }
+section { width: 60%; float: left; padding-bottom: 50px; }
 
 small { font-size: 11px; }
 
@@ -15,17 +17,17 @@ footer { clear: left; width: 100%; -webkit-font-smoothing: subpixel-antialiased;
 
 // Single Column
 .top-menu-wrapper {
-  width: 100%;
-  text-align: center;
+  float: right;
+  right: 50%;
+  position: relative;
+  text-align: left;
 }
 
 .top-menu-wrapper nav ul {
-  list-style-type: none;
-  display: block;
-  text-align: center;
+  list-style-type: none; 
+  position: relative;
+  left: 50%;
 }
-
-.top-menu-wrapper nav ul li { float: left;}
 
 .top-menu-wrapper nav li:first-child a { width: 100px; border-radius: 5px 0 0 5px; }
 
@@ -37,7 +39,7 @@ footer { clear: left; width: 100%; -webkit-font-smoothing: subpixel-antialiased;
 
 .top-menu-wrapper nav ul a:active { background-color: #f0f0f0; }
 
-.top-menu-wrapper nav ul li { border-right: none; width: 100px; }
+.top-menu-wrapper nav ul li { float: left; border-right: none; width: 100px; }
 
 .top-menu-wrapper nav ul a strong { font-size: 14px; display: block; color: #222; }
 
@@ -49,14 +51,19 @@ footer { clear: left; width: 100%; -webkit-font-smoothing: subpixel-antialiased;
 // Double Column
 .left-menu-wrapper {
   float: left;
-  width: 50%;
+  width: 40%;
 }
 
+.left-menu-wrapper ul {
+  padding: 0;
+}
 
-
+.left-menu-wrapper li {
+  list-style-type: none;
+}
 
 @media print, screen and (max-width: 960px) { div.wrapper { width: auto; margin: 0; }
-  header, section, footer { float: none; position: static; width: auto; }
+  header, section, footer { position: static; width: auto; }
   header { padding-right: 320px; }
   section { border: 1px solid #e5e5e5; border-width: 1px 0; padding: 20px 0; margin: 0 0 20px; }
   header a small { display: inline; }
