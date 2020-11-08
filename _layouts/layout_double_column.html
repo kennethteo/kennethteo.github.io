@@ -6,10 +6,13 @@
   <div class="wrapper">
 
     {%- include header.html -%}
+    
+    <div class="left-menu-wrapper">
+    {%- include nav_menu.html -%}
+    </div>
+    
     <section>
-
       {{ content }}
-
     </section>
 
     {%- include footer.html -%}
