@@ -29,6 +29,7 @@ sass:
 exclude:
   - .sass-cache/
   - .jekyll-cache/
+  - .jekyll-metadata/
   - gemfiles/
   - Gemfile
   - Gemfile.lock
