@@ -7,3 +7,12 @@ layout: home
 ## Welcome
 
 Welcome to my page. This site is still under construction.
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
