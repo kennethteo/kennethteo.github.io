@@ -6,7 +6,7 @@ layout: page
 ---
 <h2>Tech</h2>
 <ul>
-    {% for post in site.tech %}
+    {% for post in site.posts %}
     <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
