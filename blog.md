@@ -9,7 +9,7 @@ layout: page
     {% assign filtered_posts = site.posts | where: 'categories', 'blog' %}
     {% for filtered_posts in site.posts %}
     <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ filtered_posts.url }}">{{ filtered_posts.title }}</a>
     </li>
     {% endfor %}
 </ul>
