@@ -7,9 +7,9 @@ layout: page
 <h2>Tech</h2>
 <ul>
     {% assign filtered_posts = site.posts | where: 'categories', 'tech' %}
-    {% for filtered_posts in site.posts %}
+    {% for post in filtered_posts %}
     <li>
-        <a href="{{ filtered_posts.url }}">{{ filtered_posts.title }}</a>
+        <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
