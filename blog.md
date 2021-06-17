@@ -6,11 +6,10 @@ layout: page
 ---
 <h2>Blog</h2>
 <ul>
-    {% for post in site.posts %}
-    {% if post.categories contains "blog" %}
+    {% assign filtered_posts = site.posts | where: 'categories', 'blog' %}
+    {% for filtered_posts in site.posts %}
     <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
-    {% endif %}
     {% endfor %}
 </ul>
