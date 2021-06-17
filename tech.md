@@ -4,10 +4,10 @@
 
 layout: page
 ---
-<h2>Blog</h2>
+<h2>Tech</h2>
 <ul>
     {% for post in site.posts %}
-    {% if post.categories contains "blog" %}
+    {% if post.categories contains "tech" %}
     <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
