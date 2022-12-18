@@ -7,6 +7,8 @@ title: Writings
 ### Fountain Pens
 Lamy Safari (EF Nib)
 Kaweco Classic Sport Fountain Pen Green - M
+Kaweco Classic Sport Fountain Pen Navy - EF
+Kaweco Brass Sport Fountain Pen - F
 Conklin Duraflex Limited Edition Fountain Pen (Flex Nib) Chrome
 TWSBI Diamond 580 AL R Prussian Blue Fountain Pen - Stub 1.1mm
 TWSBI Diamond 580 Nib Set - Extra Fine 
