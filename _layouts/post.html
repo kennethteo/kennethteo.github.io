@@ -11,6 +11,6 @@ layout: layout_single_column
 
 {{content}}
 
-{% if page.tags != '' %}
+{% if page.tags.length > 0 %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
 {% endif %}
